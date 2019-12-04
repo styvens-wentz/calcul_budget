@@ -1,0 +1,182 @@
+body {
+    width: 100%;
+}
+
+#titre {
+    text-align: center;
+    font-size: 60px;
+    background: #6dc7ff;
+    padding-top: 10px;
+    height: 90px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: rgba(54, 18, 255, 0.69);
+    font-family: Papyrus, fantasy;
+}
+
+fieldset {
+    border: solid black 2px;
+    padding-top: 25px;
+}
+
+#depense, #recette, #epargne, #resultat {
+    border: ridge 10px #6dc7ff;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#depense fieldset {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#depense_fixe {
+    min-height: 567px;
+}
+
+legend {
+    width: auto;
+    font-size: 40px;
+    color: rgba(54, 18, 255, 0.69);
+    background: #6dc7ff;
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+label {
+    font-size: 18px;
+    width: 260px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin: 10px auto;
+}
+
+#depense_fixe, #depense_courante, #depense_occasionnelle, #autre_depense {
+    margin: 10px;
+    width: 48%;
+}
+
+#depense_fixe legend, #depense_courante legend, #depense_occasionnelle legend, #autre_depense legend {
+    font-size: 30px;
+    background: gainsboro;
+}
+
+
+#recette label:not(input) {
+    font-size: 18px;
+    width: 260px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#recette input {
+    width: 80px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#recette div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#salaire, #aide, #rente, #autre_recette {
+    width: 270px !important;
+}
+
+#valider_formulaire {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#valider, #effacer {
+    height: 50px;
+    width: 140px;
+    font-size: 30px;
+    margin: 20px 30px 30px;
+    padding: 0 20px ;
+    border-radius: 25px;
+    background: #6ba9e1;
+    border: #6dc7ff groove 3px;
+    color: rgba(54, 18, 255, 0.69);
+    font-weight: bold;
+}
+
+#valider:hover, #effacer:hover {
+    background: #6dc7ff;
+    border: #6ba9e1 ridge 3px;
+    color: beige;
+}
+
+#restant, #proposition {
+    border: 2px black solid;
+    min-height: 70px;
+    width: 40%;
+    margin-bottom: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#resultat *:not(legend):not(span) {
+    float: left;
+}
+
+#restant {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: rgba(54, 18, 255, 0.69);
+}
+
+#proposition {
+    font-size: 30px;
+    padding-top: 10px;
+    color: rgba(54, 18, 255, 0.69);
+}
+
+.ajout_autre {
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #6ba9e1;
+    border: #6dc7ff groove 3px;
+    color: rgba(54, 18, 255, 0.69);
+    font-family: "Arial Black", serif;
+}
+
+.ajout_autre:hover {
+    background: #6dc7ff;
+    border: #6ba9e1 ridge 3px;
+    color: beige;
+}
+
+#ajout_autre_recette {
+    margin-top: 30px;
+}
+
+#ajout_autre_depense {
+    float: right;
+    margin-top: -70px;
+    margin-right: 220px;
+}
+
+
