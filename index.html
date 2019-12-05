@@ -12,76 +12,78 @@
 <body>
 <h1 id="titre">Calcul de Budget</h1>
 
-    <fieldset id="depense">
-        <legend>Les Dépenses</legend>
-            <fieldset id="depense_fixe">
-                <legend>Les Dépenses Fixes</legend>
-                <label>Loyer et Charges *: <input type="text" id="loyer_charge" required></label>
-                <label>Remboursement de Crédits: <input type="text" id="remboursement_credit"></label>
-                <label>Eau/Électricité/Gaz *: <input type="text" id="eau_elec_gaz" required></label>
-                <label>Téléphone - Internet *: <input type="text" id="tel_internet" required></label>
-                <label>Assurance Habitation: <input type="text" id="assur_hab"></label>
-                <label>Assurance Véhicules: <input type="text" id="assur_vehicu"></label>
-                <label>Mutuelle Santé: <input type="text" id="mutuelle"></label>
-                <label>Frais de Garde: <input type="text" id="frais_garde"></label>
-                <label>Impôts sur le Revenu: <input type="text" id="impot_revenu"></label>
-                <label>Impôts Locaux: <input type="text" id="impot_locaux"></label>
-            </fieldset>
-            <fieldset id="depense_courante">
-                <legend>Les Dépenses Courantes</legend>
-                <label>Courses: <input type="text" id="courses"></label>
-                <label>Essence/Frais de Transport: <input type="text" id="essence_transport"></label>
-                <label>Activités Sportives et Culturelles: <input type="text" id="activite"></label>
-            </fieldset>
-            <fieldset id="depense_occasionnelle">
-                <legend>Les Dépenses Occasionnelles</legend>
-                <label>Sorties: <input type="text" id="sortie"></label>
-            </fieldset>
-            <fieldset id="autre_depense">
-                <legend>Les Autres Dépenses</legend>
-                <label>Autre: <input type="text" class="depense_autre"></label>
-                <div>
-                    <button class="ajout_autre" id="ajout_autre_depense">+</button>
-                </div>
-            </fieldset>
-    </fieldset>
 
-    <fieldset id="recette">
-        <legend>Les Recettes</legend>
+<fieldset id="depense">
+    <legend>Les Dépenses</legend>
+    <fieldset id="depense_fixe">
+        <legend>Les Dépenses Fixes</legend>
+        <label>Loyer et Charges *: <input type="text" id="loyer_charge" required></label>
+        <label>Remboursement de Crédits: <input type="text" id="remboursement_credit"></label>
+        <label>Eau/Électricité/Gaz *: <input type="text" id="eau_elec_gaz" required></label>
+        <label>Téléphone - Internet *: <input type="text" id="tel_internet" required></label>
+        <label>Assurance Habitation: <input type="text" id="assur_hab"></label>
+        <label>Assurance Véhicules: <input type="text" id="assur_vehicu"></label>
+        <label>Mutuelle Santé: <input type="text" id="mutuelle"></label>
+        <label>Frais de Garde: <input type="text" id="frais_garde"></label>
+        <label>Impôts sur le Revenu: <input type="text" id="impot_revenu"></label>
+        <label>Impôts Locaux: <input type="text" id="impot_locaux"></label>
+    </fieldset>
+    <fieldset id="depense_courante">
+        <legend>Les Dépenses Courantes</legend>
+        <label>Courses: <input type="text" id="courses"></label>
+        <label>Essence/Frais de Transport: <input type="text" id="essence_transport"></label>
+        <label>Activités Sportives et Culturelles: <input type="text" id="activite"></label>
+    </fieldset>
+    <fieldset id="depense_occasionnelle">
+        <legend>Les Dépenses Occasionnelles</legend>
+        <label>Sorties: <input type="text" id="sortie"></label>
+    </fieldset>
+    <fieldset id="autre_depense">
+        <legend>Les Autres Dépenses</legend>
         <div>
-            <div id="salaire">
-                <label>Le Salaire: <input type="text" id="montant_salaire"></label>
-            </div>
-            <div id="aide">
-                <label>Les Aides (Allocations, etc): <input type="text" id="montant_aide"></label>
-            </div>
-            <div id="rente">
-                <label>Les Rentes: <input type="text" id="montant_rente"></label>
-            </div>
-            <div id="autre_recette">
-                <label>Autre: <input type="text" class="recette_autre"></label>
-                <div>
-                    <button class="ajout_autre" id="ajout_autre_recette">+</button>
-                </div>
-            </div>
+            <label id="bout_depense">Ajouter une Autre Dépense: <input type="button" value="+" class="ajout_autre" id="ajout_autre_depense"></label>
+            <label id="aff_depense">Autre Dépense: <input type="text" class="depense_autre"></label>
         </div>
     </fieldset>
+</fieldset>
 
-    <fieldset id="epargne">
-        <legend>Épargne</legend>
-        <label>Épargne: <input type="text" id="epargne_libre"></label>
-    </fieldset>
-
-    <fieldset id="resultat">
-        <legend>Résultat</legend>
-        <div id="restant">Il vous reste <span id="somme_restant"></span> €</div>
-        <div id="proposition">Vous pouvez vous acheter</div>
-    </fieldset>
-
-    <div id="valider_formulaire">
-        <input type="submit" id="valider">
-        <input type="reset" value="Effacer" id="effacer">
+<fieldset id="recette">
+    <legend>Les Recettes</legend>
+    <div id="les_recettes">
+        <div id="salaire">
+            <label>Le Salaire: <input type="text" id="montant_salaire"></label>
+        </div>
+        <div id="aide">
+            <label>Les Aides (Allocations, etc): <input type="text" id="montant_aide"></label>
+        </div>
+        <div id="rente">
+            <label>Les Rentes: <input type="text" id="montant_rente"></label>
+        </div>
+        <div id="autre_recette">
+            <div>
+                <label id="bout_recette">Ajouter une Autre Recette: <input type="button" value="+" class="ajout_autre" id="ajout_autre_recette"></label>
+                <label id="aff_recette">Autre Recette: <input type="text" class="recette_autre"></label>
+            </div>
+        </div>
     </div>
+</fieldset>
+
+<fieldset id="epargne">
+    <legend>Épargne</legend>
+    <label id="text_epargne">Combien Voulez-Vous Épargner: <input type="text" id="epargne_libre"></label>
+</fieldset>
+
+<fieldset id="resultat">
+    <legend>Résultat</legend>
+    <div id="restant">Il vous reste <span id="somme_restant"></span> €</div>
+    <div id="proposition"></div>
+</fieldset>
+
+<div id="valider_formulaire">
+    <input type="submit" id="valider">
+    <input type="reset" value="Effacer" id="effacer">
+</div>
+
 
 
 

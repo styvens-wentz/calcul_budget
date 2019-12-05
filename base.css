@@ -161,6 +161,7 @@ input {
     border: #6dc7ff groove 3px;
     color: rgba(54, 18, 255, 0.69);
     font-family: "Arial Black", serif;
+    padding-left: 10px;
 }
 
 .ajout_autre:hover {
@@ -169,14 +170,10 @@ input {
     color: beige;
 }
 
-#ajout_autre_recette {
-    margin-top: 30px;
+#aff_depense {
+    display: none;
 }
 
-#ajout_autre_depense {
-    float: right;
-    margin-top: -70px;
-    margin-right: 220px;
+#autre_recette #aff_recette {
+    display: none;
 }
-
-
