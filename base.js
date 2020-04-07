@@ -149,6 +149,8 @@ effacer.addEventListener("click", function () {
     for ( const modif of effacer_input) {
         modif.value = '';
     }
+    proposition.innerHTML = '';
+    somme_restant.innerHTML = '';
     effacer.value = 'Effacer';
     valider.value = 'Valider';
     ajout_autre_recette.value = '+';
